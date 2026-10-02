@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="weather-app">
+        <header class="app-header">
+            <h1>🌤️ Weather App</h1>
+            <button type="button" id="unitToggle" class="unit-toggle" aria-label="Ganti satuan suhu">°C</button>
+        </header>
+
+        <!-- Search Form -->
+        <form id="searchForm" class="search-form">
+            <label for="cityInput" class="sr-only">Nama kota</label>
+            <input type="text" id="cityInput" placeholder="Masukkan nama kota..." autocomplete="off">
+            <button type="submit">Cari</button>
+        </form>
+
+        <!-- Riwayat Pencarian (Bonus) -->
+        <section id="historySection" class="history hidden" aria-label="Riwayat pencarian">
+            <div class="history-head">
+                <span>Pencarian terakhir</span>
+                <button type="button" id="clearHistory" class="link-btn">Hapus</button>
+            </div>
+            <ul id="historyList" class="history-list"></ul>
+        </section>
+
+        <!-- Loading State -->
+        <div id="loading" class="status hidden" role="status">⏳ Memuat data...</div>
+
+        <!-- Error Message -->
+        <div id="error" class="status error hidden" role="alert"></div>
+
+        <!-- Weather Result -->
+        <section id="weatherResult" class="result hidden" aria-live="polite">
+            <h2 id="cityName"></h2>
+            <img id="weatherIcon" alt="Ikon cuaca" width="100" height="100">
+            <p id="temperature" class="temp"></p>
+            <p id="description" class="desc"></p>
+            <p id="humidity" class="meta"></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
