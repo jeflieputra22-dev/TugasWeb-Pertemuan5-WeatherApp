@@ -1,6 +1,6 @@
 // ===== Konfigurasi =====
 // Ganti dengan API key dari openweathermap.org (jangan commit key asli ke repo public!)
-const API_KEY = 'd4c891341d0020ad7f86380c2a0ccf5e';
+const API_KEY = 'Xn6ShOQ-fZyxxlTD0jxvlkyIZqFfdSMv';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const HISTORY_KEY = 'weather-history';
 const UNIT_KEY = 'weather-unit';
