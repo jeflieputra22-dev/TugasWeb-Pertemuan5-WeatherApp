@@ -1,6 +1,7 @@
 # Weather App — Tugas Rutin 5 (Pemrograman Web)
 
 Aplikasi cuaca sederhana memakai **OpenWeatherMap API**, JavaScript ES6+ (`const`/`let`, arrow function, template literals, destructuring, `async/await`, Fetch API).
+Link web : https://jeflieputra22-dev.github.io/TugasWeb-Pertemuan5-WeatherApp/
 
 ## Fitur
 - Cari cuaca berdasarkan nama kota: nama kota, suhu, deskripsi, ikon, kelembaban
